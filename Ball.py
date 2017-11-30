@@ -73,8 +73,6 @@ def main():
     WIDTH = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
     HEIGHT = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
 
-    # frames per second
-
     # HSV color filter values
 
     H_max = 130
