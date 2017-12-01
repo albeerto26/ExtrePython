@@ -1,4 +1,4 @@
-sudo apt-get install -y build-essential cmake pkg-config libjpeg8-dev libtiff5-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran python2.7-dev
+sudo apt-get install -y build-essential cmake pkg-config libjpeg8-dev libtiff5-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran python2.7-dev qt5-default
 cd ~
 wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.2.0.zip
 sudo unzip opencv.zip
@@ -14,4 +14,3 @@ make -j $(($(nproc) + 1))
 sudo make install
 sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
-sudo apt-get update
