@@ -76,7 +76,7 @@ def main():
     # HSV color filter values
 
     H_max = 130
-    H_min = 110
+    H_min = 100
 
     S_max = 255
     S_min = 107.1
