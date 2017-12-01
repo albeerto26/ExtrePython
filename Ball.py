@@ -70,8 +70,8 @@ def main():
     cap = cv2.VideoCapture(0)
 
     # Constans with WIDTH and HEIGHT of the screen
-    WIDTH = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
-    HEIGHT = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    WIDTH = len(frame)
+    HEIGHT = len(frame[0])
 
     # HSV color filter values
 
