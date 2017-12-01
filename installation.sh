@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 sudo apt-get update
-sudo apt-get install -y build-essential cmake pkg-config libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran python2.7-dev python3.5-dev
+sudo apt-get install -y build-essential cmake pkg-config libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran python2.7-dev
 cd ~
 wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.1.0.zip
-unzip opencv.zip
+sudo unzip opencv.zip
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 rm get-pip.py
